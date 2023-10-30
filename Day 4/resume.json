@@ -1,0 +1,81 @@
+{
+    "Personal_Details": {
+      "name": "Sudharsanan",
+      "email": "sudharavi.97@gmail,com",
+      "phone": "8344408643",
+      "degree": "B.Tech Computer Science And Engineering",
+      "summary": "I am a System Engineer with 4.5+ years of experience in development on C,C++ and Java .",
+      "location": {
+        "address": "Plot no 4, Ganesan Nagar , Ammachatiram",
+        "PinCode": "612103",
+        "city": "Kumbakonam",
+        "State": "TamilNadu",
+        "Nation": "India"
+      },
+      "profiles": [
+        {
+          "network": "linkedin",
+          "username": "sudharsanan",
+          "url": "www.linkedin.com/sudharsanan"
+        },
+        {
+            "network": "Github",
+            "username": "sudharsanan",
+            "url": "www.github.com/sudharsanan"
+          }
+      ]
+    },
+    "work": [
+      {
+        "company": "TCS",
+        "position": "System Engineer",
+        "experience":"3.5 Years",
+        "summary": "Backend developer and Production Support executive for client application",
+        "Technology": [
+          "C","Mainframe","SQL","AWS","Git"
+        ]
+      },
+      {
+        "company": "Capgemini",
+        "position": "Senior Software Engineer",
+        "experience":"2.5 Years",
+        "summary": "Legacy Modernization Analyst",
+        "Technology": [
+          "C++","Linux","SQL","AWS","Git","Informix Db","JS","java","springboot"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "institution": "SASTRA University",
+        "Passed Out": "2018",
+        "gpa": "8.3",
+        "Degree":"B.Tech Computer Science and Engineering"
+      }
+    ],
+    "awards": [
+      {
+        "title": "Star Performer",
+        "date": ["Jan-2019","Aug-2019","Feb-2020","Jun-2020"],
+        "awarder": "TCS",
+        "summary": "Star Performer"
+      }
+    ],
+    "languages": [
+      {
+        "language": "Tamil",
+        "fluency": "Read , write, speak"
+      },
+      {
+        "language": "English",
+        "fluency": "Read , write, speak"
+      },
+      {
+        "language": "Malayalam",
+        "fluency": "Speak"
+      }
+    ],
+    "interests": [
+        "Cricket","VideoGame","Keyboard","Driving","Trading"
+    ]
+  }
