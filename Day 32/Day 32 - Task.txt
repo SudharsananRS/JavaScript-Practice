@@ -1,0 +1,33 @@
+1. db.task_guvi.find(
+    {
+        "date": {
+            $gte: new ISODate("2023-10-01T00:00:00.000Z"),
+            $lt: new ISODate("2023-11-01T00:00:00.000Z")
+        }
+    },
+    {
+        "topic": 1,
+        "task": 1
+    }
+)
+
+2. db.placement.find({
+    driveDate: { 
+        $gte: '2020-10-15',
+        $lte: '2020-10-31'
+	
+    }
+});
+
+
+3. db.company.find({}, {_id:0, company_name:1, student_id_list_placed:1})
+
+4.    db.users.aggregate({$project:{_id:0,username:1,no_of_prob_solved:{$size:"codekata_solved"}}})
+
+
+
+5.      db.mentors.find({$where:"this.student_id_list.length > 15"},{_id:0,mentor_name:1})
+
+6. db.attendance.aggregate({$match:{date:{$gte:"2020-10-15",$lt:"2020-10-31"}}},{$project:{_id:0,date:1,no_of_absent:{$size:"$absent"}}});
+db.tasks.aggregate({$match:{date:{$gte:"2020-10-15",$lt:"2020-10-31"}}},{$project:{_id:0,task_name:1,date:1,no_of_not_submitted:{$size:"$notsubmitted"}}})
+
