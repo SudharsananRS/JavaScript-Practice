@@ -1,0 +1,19 @@
+1. db.task.find()
+2. db.task.find( { $and: [ { product_price: { $lte: 800 } }, { product_price: { $gte: 400 } } ] } )
+3. db.task.find( { $or: [ { product_price: { $gte: 600 } }, { product_price: { $lte: 400 } } ] } )
+4. db.task.find( { product_price:{ $gt:600} } ).limit(4);
+5. db.task.find({}, { product_name: 1, product_material: 1, _id: 0 })
+6. db.task.find({ id: "10" });
+7. db.task.find({}, { product_name: 1, product_material: 1, _id: 0 })
+8. db.products.find({ material: /soft/ })
+9. db.task.find( { $or: [ { product_price: { $gte: 600 } }, { product_price: { $lte: 400 } } ] } )
+10.
+i .var duplicates = {};
+
+ii .db.task.find().forEach(function(e) {
+    if (duplicates[e.product_price]) {
+        db.task.deleteOne({_id: e._id});
+    } else {
+        duplicates[e.product_price] = true;
+    }
+});
